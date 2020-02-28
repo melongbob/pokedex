@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  font-family: 'Sigmar one';
+  font-size: 50px;
+  color: Gold;
+  -webkit-text-stroke: darkblue 1.5px; 
+}
