@@ -1,9 +1,9 @@
 import React from 'react'
 import './tile.styles.css'
 
-export const Tile = props => (
-    <div className='tile-container'>
-        <img alt="pokemon" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.id}.png`} />
-        <h1> {props.pokemon.name} </h1>
+export const Tile = ({pokemon, id, handleOnClick}) => (
+    <div className='tile-container' onClick={() => {handleOnClick(id)}}>
+        <img alt="pokemon" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} />
+        <h1> {pokemon.name} </h1>
     </div>
 )

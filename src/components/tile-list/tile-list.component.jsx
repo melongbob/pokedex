@@ -7,10 +7,14 @@ function getNationalDexId(url){
     return arr[6];
 }  
 
-export const TileList = props => (
+export const TileList = ({pokemons, handleOnClick}) => (
     <div className='tile-list'>
-        {props.pokemons.map(pokemon => (
-            <Tile key={getNationalDexId(pokemon.url)} id={getNationalDexId(pokemon.url)} pokemon={pokemon} />
+        {pokemons.map(pokemon => (
+            <Tile key={getNationalDexId(pokemon.url)} 
+                id={getNationalDexId(pokemon.url)} 
+                pokemon={pokemon}
+                handleOnClick={handleOnClick}
+            />
         ))}
     </div>
 )

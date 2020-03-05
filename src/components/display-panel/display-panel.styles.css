@@ -1,0 +1,51 @@
+.display{
+    width: 40%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sprite-image {
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    padding: 15px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom,
+        dimgrey,
+        darkslategrey
+    );
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    float: left;
+}
+
+.description {
+    width: 250px;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: linear-gradient(
+        to bottom,
+        dimgrey,
+        darkslategrey
+    );
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+h3{
+    margin: 5px;
+}
